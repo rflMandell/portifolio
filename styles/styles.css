@@ -135,3 +135,18 @@ header .info-text .scroll::before{
         opacity: 0;
     }
 }
+
+#about, #projects{
+    background-color: rgb(24, 24, 24);
+    padding: 40px;
+}
+
+#about .header, #projects .header h1{
+    text-align: center;
+    color: #ececec;
+    text-transform: uppercase;
+}
+
+#about .header, #projects .header a{
+
+}
