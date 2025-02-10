@@ -5,9 +5,9 @@ function scrollToTop() {
 }
 
 window.addEventListener('scroll', function(){
-    var scrollTopButton = document.querySelector('.scrol-top');
+    var scrollTopButton = document.querySelector('.scroll-top');
     if (this.window.pageYOffset > 200){
-        scrollToButton.style.display = 'block';
+        scrollTopButton.style.display = 'block';
     } else{
         scrollTopButton.style.display = 'none';
     }
