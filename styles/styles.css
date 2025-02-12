@@ -40,6 +40,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+.navbar h2 a{
+    color: #ececec;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar h2 a:hover{
+    color: #7b42ff;
+}
+
 .navbar ul {
     display: flex;
 }
@@ -216,8 +227,8 @@ section.visible {
 }
 
 #about .card img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 10px;
 }
 
@@ -255,8 +266,8 @@ section.visible {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 250px;
-    padding: 20px;
+    width: 500px;
+    padding: 0px;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -313,6 +324,7 @@ section.visible {
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.3s ease;
+    margin: 10px;
 }
 
 .project-card:hover .details-btn {
@@ -443,31 +455,6 @@ footer {
     gap: 20px;
 }
 
-footer .start {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-footer .start h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-footer .start button {
-    background: linear-gradient(45deg, #7b42ff, #3a1c71);
-    color: #fff;
-    border: none;
-    padding: 10px 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: transform 0.3s ease;
-}
-
-footer .start button:hover {
-    transform: scale(1.05);
-}
-
 footer .cols {
     display: flex;
     justify-content: space-between;
@@ -494,22 +481,6 @@ footer .links-col a {
 }
 
 footer .links-col a:hover {
-    color: #7b42ff;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.social-icons a {
-    color: #fff;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
     color: #7b42ff;
 }
 
