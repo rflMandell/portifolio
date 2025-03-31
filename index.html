@@ -1,137 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael's C.V</title>
+    <title>Rafael's Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="navbar">
+    <nav class="navbar">
         <h2><a href="#">rflMandel</a></h2>
         <ul>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">My skills</a></li>
-            <li><a href="#formacao">Education</a></li>
+            <li><a href="#about" data-translate="about">About me</a></li>
+            <li><a href="#projects" data-translate="projects">Projects</a></li>
+            <li><a href="#skills" data-translate="skills">My skills</a></li>
+            <li><a href="#education" data-translate="education">Education</a></li>
         </ul>
-        <button class="mode-btn">English</button>
-    </div>
+        <button id="language-btn" class="mode-btn">Português</button>
+    </nav>
 
     <header>
-        <div class="info-text">
+        <div class="header-content">
             <h1>Rafael Mandel</h1>
-            <h3>Software Engineer</h3>
-            <a href="#about" class="scroll"><i class='bx bxs-down-arrow'></i></a>
+            <h3 data-translate="jobTitle">Software Engineer</h3>
+            <a href="#about" class="scroll-down">
+                <i class='bx bxs-down-arrow'></i>
+            </a>
         </div>
     </header>
 
-    <section id="about">
-        <div class="header">
-            <h1>About me</h1>
+    <section id="about" class="section">
+        <div class="section-header">
+            <h1 data-translate="aboutTitle">About me</h1>
         </div>
-
-        <div class="card">
-            <img src="images/round.png">
-            <div class="info">
+        <div class="about-card">
+            <img src="images/round.png" alt="Rafael's Photo">
+            <div class="about-info">
                 <h1>It's Rafael</h1>
-                <p>
-                    I have worked in the publishing market,
-developing organizational skills, attention to
-detail, and critical analysis. During my transition
-to the technology field, I deepened my
-knowledge in software development and system implementation.
+                <p data-translate="aboutText">
+                    I have worked in the publishing market, developing organizational skills, 
+                    attention to detail, and critical analysis. During my transition to the 
+                    technology field, I deepened my knowledge in software development and system implementation.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="header">
-            <h1>Projects</h1>
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h1 data-translate="projectsTitle">Projects</h1>
         </div>
-        <div class="projects-container">
+        <div class="projects-grid">
+            <a href="https://github.com/rflMandell/Personal-Expense-Tracker" class="project-card">
+                <i class='bx bxs-folder-open'></i>
+                <div class="project-info">
+                    <h2>Personal Expense Tracker</h2>
+                    <p>A simple command-line Personal Expense Tracker built with Python and SQLite.</p>
+                    <button class="project-btn" data-translate="seeMore">See more</button>
+                </div>
+            </a>
+
+            <a href="https://github.com/rflMandell/Task-Manager" class="project-card">
+                <i class='bx bxs-folder-open'></i>
+                <div class="project-info">
+                    <h2>Task Manager</h2>
+                    <p>This is a simple terminal-based task manager that allows you to add, list, complete, and remove tasks.</p>
+                    <button class="project-btn" data-translate="seeMore">See more</button>
+                </div>
+            </a>
+
             <a href="https://github.com/rflMandell/market-system" class="project-card">
                 <i class='bx bxs-folder-open'></i>
                 <div class="project-info">
-                    <h1>Market System</h1>
-                    <p>
-                        This project implements a simple inventory management system using SQLite and PYTHON. It allows users to search, register, and update products, as well as a checkout mode to process sales. There is access control for managers, who can add new products and update quantities. The system operates through an interactive menu, differentiating permissions between employees and managers.
-                    </p>
-                    <button class="details-btn">see more</button>
+                    <h2>Market System</h2>
+                    <p>This project implements a simple inventory management system using SQLite and PYTHON.</p>
+                    <button class="project-btn" data-translate="seeMore">See more</button>
                 </div>
             </a>
         </div>
     </section>
 
-    <section id="skills">
-        <div class="header">
-            <h1>My Programming Skills</h1>
+    <section id="skills" class="section">
+        <div class="section-header">
+            <h1 data-translate="skillsTitle">My Skills</h1>
         </div>
-        <div class="skills-box">
-            <p>
+        <div class="skills-container">
+            <p data-translate="skillsText">
                 I develop simple, intuitive, and responsive user interfaces that help users complete tasks with less effort and time, using the following technologies:
             </p>
-            <div class="skills-container">
+            <div class="skills-grid">
                 <div class="skill-item">
                     <i class='bx bxl-python'></i>
                     <h3>Python</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 90%;"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
                     </div>
                 </div>
+                
                 <div class="skill-item">
                     <i class='bx bxs-data'></i>
                     <h3>SQL</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%;"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
                     </div>
                 </div>
+                
                 <div class="skill-item">
                     <i class='bx bxs-bar-chart-alt-2'></i>
                     <h3>Power BI</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%;"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="formacao">
-        <div class="header">
-            <h1>Education</h1>
+    <section id="education" class="section">
+        <div class="section-header">
+            <h1 data-translate="educationTitle">Education</h1>
         </div>
-        <div class="awards-container">
-            <div class="award">
+        <div class="education-list">
+            <div class="education-item">
                 <i class="ri-award-fill"></i>
-                <div class="award-info">
-                    <h5>Fiap - Bachelor's in Software Engineering</h5>
+                <div class="education-info">
+                    <h3>FIAP - Bachelor's in Software Engineering</h3>
                     <p>August 2024 - December 2028</p>
                 </div>
             </div>
-            <div class="award">
+            
+            <div class="education-item">
                 <i class="ri-award-fill"></i>
-                <div class="award-info">
-                    <h5>Fiap - Python Course</h5>
+                <div class="education-info">
+                    <h3>FIAP - Python Course</h3>
                 </div>
             </div>
-            <div class="award">
+            
+            <div class="education-item">
                 <i class="ri-award-fill"></i>
-                <div class="award-info">
-                    <h5>Fiap - Oracle Database Course</h5>
+                <div class="education-info">
+                    <h3>FIAP - Oracle Database Course</h3>
                 </div>
             </div>
-            <div class="award">
+            
+            <div class="education-item">
                 <i class="ri-award-fill"></i>
-                <div class="award-info">
-                    <h5>International English Test - C1 Advanced English Level</h5>
+                <div class="education-info">
+                    <h3 data-translate="englishCert">International English Test - C1 Advanced English Level</h3>
                     <p>January 2025</p>
                 </div>
                 <a href="https://internationalenglishtest.com/verify-certificate/734926C140-734926C149-734926990B/">
@@ -142,29 +160,29 @@ knowledge in software development and system implementation.
     </section>
 
     <footer>
-        <div class="cols">
-            <div class="links-col">
+        <div class="footer-columns">
+            <div class="footer-col">
                 <h4><a href="#">rflMandel</a></h4>
-                <a href="#">Aboute me</a>
-                <a href="#">Projects</a>
-                <a href="#">My skills</a>
-                <a href="#">Education</a>
+                <a href="#about" data-translate="about">About me</a>
+                <a href="#projects" data-translate="projects">Projects</a>
+                <a href="#skills" data-translate="skills">My skills</a>
+                <a href="#education" data-translate="education">Education</a>
             </div>
-
-            <div class="links-col">
-                <h4>Social Media</h4>
-                <a href="arquives/Rafael Mandel C.V.pdf">Resume</a>
-                <a href="https://www.linkedin.com/in/rafael-mandel-556a10310/">Linkedin</a>
+            <div class="footer-col">
+                <h4 data-translate="socialMedia">Social Media</h4>
+                <a href="arquives/Rafael Mandel C.V.pdf" data-translate="resume">Resume</a>
+                <a href="https://www.linkedin.com/in/rafael-mandel-556a10310/">LinkedIn</a>
                 <a href="https://github.com/rflMandell">GitHub</a>
-                <a href=mailto:rflmandelcr@hotmail.com>rflmandelcr@hotmail.com</a>
+                <a href="mailto:rflmandelcr@hotmail.com">Email</a>
             </div>
         </div>
     </footer>
 
-    <button class="scroll-top" onclick="scrollToTop()">
+    <button class="scroll-top">
         <i class='bx bxs-up-arrow'></i>
     </button>
 
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/language.js"></script>
+    <script src="scripts/scroll.js"></script>
 </body>
 </html>
