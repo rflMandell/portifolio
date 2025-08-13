@@ -101,6 +101,36 @@ header {
     margin-bottom: 2rem;
 }
 
+.hero-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+
+.hero-social a {
+    color: var(--light);
+    font-size: 1.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.hero-social a:hover {
+    color: var(--light);
+    background-color: rgba(123, 66, 255, 0.15);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(123, 66, 255, 0.25);
+}
+
 .scroll-down {
     display: inline-block;
     color: var(--light);
@@ -172,7 +202,8 @@ header {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+    justify-content: center;
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -186,6 +217,8 @@ header {
     position: relative;
     overflow: hidden;
     color: var(--light);
+    width: 100%;
+    max-width: 360px;
 }
 
 .project-card:hover {
@@ -240,7 +273,8 @@ header {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 180px));
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -250,6 +284,8 @@ header {
     border-radius: 10px;
     text-align: center;
     transition: all 0.3s;
+    width: 100%;
+    max-width: 180px;
 }
 
 .skill-item:hover {
@@ -402,17 +438,22 @@ footer {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        gap: 1.5rem;
-        padding: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
     }
 
     .header-content h1 {
-        font-size: 3rem;
+    font-size: 3rem;
+    }
+
+    .hero-social {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .footer-columns {
-        flex-direction: column;
+    flex-direction: column;
     }
 }
 

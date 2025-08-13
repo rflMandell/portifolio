@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael's Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,6 +26,20 @@
         <div class="header-content">
             <h1>Rafael Mandel</h1>
             <h3 data-translate="jobTitle">Software Engineer</h3>
+
+            <!-- Social media no header (mesmas mídias do footer) -->
+            <div class="hero-social" aria-label="Minhas redes">
+                <a href="https://www.linkedin.com/in/rafael-mandel-556a10310/" aria-label="LinkedIn" target="_blank" rel="noopener">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://github.com/rflMandell" aria-label="GitHub" target="_blank" rel="noopener">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="mailto:rflmandelcr@hotmail.com" aria-label="Email">
+                    <i class='bx bx-envelope'></i>
+                </a>
+            </div>
+
             <a href="#about" class="scroll-down">
                 <i class='bx bxs-down-arrow'></i>
             </a>
@@ -41,48 +55,38 @@
             <div class="about-info">
                 <h1>It's Rafael</h1>
                 <p data-translate="aboutText">
-                    I have worked in the publishing market, developing organizational skills, 
-                    attention to detail, and critical analysis. During my transition to the 
-                    technology field, I deepened my knowledge in software development and system implementation.
+                    Software developer focused on building robust and scalable solutions. I have a self-taught profile, driven by curiosity, challenges, and a constant desire for technical growth. My previous experience in the publishing industry strengthened my skills in organization, accuracy, and critical thinking — qualities I now apply to the development of well-structured, scalable systems. I seek opportunities to collaborate with technology teams and contribute to building solutions with real-world impact.
                 </p>
             </div>
         </div>
     </section>
 
     <section id="projects" class="section">
-        <div class="section-header">
-            <h1 data-translate="projectsTitle">Projects</h1>
-        </div>
-        <div class="projects-grid">
+      <div class="section-header">
+        <h1 data-translate="projectsTitle">Projects</h1>
+      </div>
 
-            <a href="https://github.com/rflMandell/GuardianPro" class="project-card">
-                <i class='bx bxs-folder-open'></i>
-                <div class="project-info">
-                    <h2>GuardianPro</h2>
-                    <p>GuardianPro is a web-based platform for clinics and healthcare professionals, offering a complete telemedicine solution. The system includes video calls, automatic AI-powered report generation, patient management, medical records, and cloud storage — all with a focus on efficient and secure healthcare.</p>
-                    <button class="project-btn" data-translate="seeMore">See more</button>
-                </div>
-            </a>
+      <div class="projects-grid">
 
-            <a href="https://github.com/rflMandell/Personal-Expense-Tracker" class="project-card">
-                <i class='bx bxs-folder-open'></i>
-                <div class="project-info">
-                    <h2>Personal Expense Tracker</h2>
-                    <p>A simple command-line Personal Expense Tracker built with Python and SQLite. This project allows users to manage their financial transactions by adding incomes and expenses, viewing their current balance, filtering transactions by date, and exporting data to a CSV file.</p>
-                    <button class="project-btn" data-translate="seeMore">See more</button>
-                </div>
-            </a>
+        <a href="https://github.com/rflMandell/GuardianPro" class="project-card">
+          <i class='bx bxs-folder-open'></i>
+          <div class="project-info">
+            <h2>GuardianPro</h2>
+            <p>GuardianPro is a web-based platform for clinics and healthcare professionals, offering a complete telemedicine solution. The system includes video calls, automatic AI-powered report generation, patient management, medical records, and cloud storage — all with a focus on efficient and secure healthcare.</p>
+            <button class="project-btn" data-translate="seeMore">See more</button>
+          </div>
+        </a>
 
-            <a href="https://github.com/rflMandell/Task-Manager" class="project-card">
-                <i class='bx bxs-folder-open'></i>
-                <div class="project-info">
-                    <h2>Task Manager</h2>
-                    <p>This is a simple terminal-based task manager that allows you to add, list, complete, and remove tasks. The project uses Python and SQLite3 to store data persistently.</p>
-                    <button class="project-btn" data-translate="seeMore">See more</button>
-                </div>
-            </a>
+        <a href="https://github.com/rflMandell/EcoAlerta" class="project-card">
+          <i class='bx bxs-folder-open'></i>
+          <div class="project-info">
+            <h2>EcoAlerta</h2>
+            <p>EcoAlerta is an automated and intelligent newsletter that sends daily, location-based reports about natural disasters (floods, earthquakes, extreme weather). Built with Django and Celery, it gathers data from public APIs (OpenWeatherMap, INMET, USGS), generates natural‑language summaries with OpenAI, and delivers personalized email alerts. Admin and task monitoring via Django Admin and Flower.</p>
+            <button class="project-btn" data-translate="seeMore">See more</button>
+          </div>
+        </a>
 
-        </div>
+      </div>
     </section>
 
     <section id="skills" class="section">
@@ -91,14 +95,23 @@
         </div>
         <div class="skills-container">
             <p data-translate="skillsText">
-                I develop simple, intuitive, and responsive user interfaces that help users complete tasks with less effort and time, using the following technologies:
+                I turn ideas into reliable software by combining APIs, data engineering and analytics, modern UIs, and cloud-native practices with the stack below.
             </p>
+
             <div class="skills-grid">
                 <div class="skill-item">
                     <i class='bx bxl-python'></i>
                     <h3>Python</h3>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-java'></i>
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
                     </div>
                 </div>
                 
@@ -106,7 +119,7 @@
                     <i class='bx bxs-data'></i>
                     <h3>SQL</h3>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
+                        <div class="skill-progress" style="width: 100%"></div>
                     </div>
                 </div>
                 
@@ -114,9 +127,82 @@
                     <i class='bx bxs-bar-chart-alt-2'></i>
                     <h3>Power BI</h3>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
+                        <div class="skill-progress" style="width: 100%"></div>
                     </div>
                 </div>
+
+                <div class="skill-item">
+                    <i class="ri-rocket-line"></i>
+                    <h3>FastAPI</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-javascript'></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-react'></i>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <i class="ri-amazon-fill"></i>
+                    <h3>AWS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <i class="ri-database-2-line"></i>
+                    <h3>PostgreSQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <i class="ri-database-line"></i>
+                    <h3>MySQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-vuejs'></i>
+                    <h3>Vue</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-nodejs'></i>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <i class="ri-leaf-line"></i>
+                    <h3>Django</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+                <!-- Fim novas skills -->
             </div>
         </div>
     </section>
@@ -172,7 +258,7 @@
             </div>
             <div class="footer-col">
                 <h4 data-translate="socialMedia">Social Media</h4>
-                <a href="arquives/C.V en Rafael Mandel.pdf" data-translate="resume">Resume</a>
+                <a href="arquives/CV pt-br Rafael Mandel.pdf" data-translate="resume">Resume</a>
                 <a href="https://www.linkedin.com/in/rafael-mandel-556a10310/">LinkedIn</a>
                 <a href="https://github.com/rflMandell">GitHub</a>
                 <a href="mailto:rflmandelcr@hotmail.com">Email</a>
