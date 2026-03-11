@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael's Portfolio</title>
+    <title>Rafael Mandel - Resume</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <linkhref="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <h2><a href="#">rflMandel</a></h2>
         <ul>
             <li><a href="#about" data-translate="about">About me</a></li>
-            <li><a href="#projects" data-translate="projects">Projects</a></li>
-            <li><a href="#skills" data-translate="skills">My skills</a></li>
+            <li><a href="#experience" data-translate="experience">Experience</a></li>
+            <li><a href="#skills" data-translate="skills">Skills</a></li>
             <li><a href="#education" data-translate="education">Education</a></li>
         </ul>
-        <button id="language-btn" class="mode-btn">Português</button>
+        <button id="language-btn" class="mode-btn">Change language</button>
     </nav>
 
     <header>
@@ -27,15 +27,14 @@
             <h1>Rafael Mandel</h1>
             <h3 data-translate="jobTitle">Software Engineer</h3>
 
-            <!-- Social media no header (mesmas mídias do footer) -->
-            <div class="hero-social" aria-label="Minhas redes">
+            <div class="hero-social" aria-label="My social media">
                 <a href="https://www.linkedin.com/in/rafael-mandel-556a10310/" aria-label="LinkedIn" target="_blank" rel="noopener">
                     <i class='bx bxl-linkedin'></i>
                 </a>
-                <a href="https://github.com/rflMandell" aria-label="GitHub" target="_blank" rel="noopener">
+                <a href="https://github.com/rflMandell" aria-label="Github" target="_blank" rel="noopener">
                     <i class='bx bxl-github'></i>
                 </a>
-                <a href="mailto:rflmandelcr@hotmail.com" aria-label="Email">
+                <a href="mailto:rflmandelcr@hotmail.com" aria-label="Email" target="_blank" rel="noopener">
                     <i class='bx bx-envelope'></i>
                 </a>
             </div>
@@ -51,42 +50,70 @@
             <h1 data-translate="aboutTitle">About me</h1>
         </div>
         <div class="about-card">
-            <img src="images/round.png" alt="Rafael's Photo">
+            <img src="images/me.jpeg" alt="Rafael's Photo">
             <div class="about-info">
-                <h1>It's Rafael</h1>
+                <h1 data-translate="itsRafael">Its's Rafael'</h1>
                 <p data-translate="aboutText">
-                    Software developer focused on building robust and scalable solutions. I have a self-taught profile, driven by curiosity, challenges, and a constant desire for technical growth. My previous experience in the publishing industry strengthened my skills in organization, accuracy, and critical thinking — qualities I now apply to the development of well-structured, scalable systems. I seek opportunities to collaborate with technology teams and contribute to building solutions with real-world impact.
+                    Software Engineer with experience building scalable backend systems in healthcare environments using Java, Spring Boot, Python, and Django. Strong background in RESTful APIs, cloud infrastructure (AWS), microservices architecture, and CI/CD automation. Proven track record of improving system scalability, reducing infrastructure costs, and delivering high-quality software in agile environments. C1 Advanced English proficiency.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="section-header">
-        <h1 data-translate="projectsTitle">Projects</h1>
-      </div>
+    <section id="experience" class="section">
+        <div class="section-header">
+            <h1 data-translate="experienceTitle">Experience</h1>
+        </div>
+        <div class="experience-list">
 
-      <div class="projects-grid">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 data-translate="exp1Role">Software Engineer</h3>
+                        <span class="experience-company">Hospital São Rafael</span>
+                    </div>
+                    <span class="experience-period" data-translate="exp1Period">Sep 2025 – Present</span>
+                </div>
+                <ul class="experience-bullets">
+                    <li data-translate="exp1b1">Designed and developed a scalable RESTful API platform integrating medical systems and devices across departments.</li>
+                    <li data-translate="exp1b2">Built backend services with Django and Spring Boot deployed on AWS, improving system availability and reducing processing latency.</li>
+                    <li data-translate="exp1b3">Established CI/CD pipelines that automated deployments and reduced production incidents.</li>
+                    <li data-translate="exp1b4">Conducted code reviews and proactively resolved critical production issues, improving overall software reliability.</li>
+                </ul>
+            </div>
 
-        <a href="https://github.com/rflMandell/GuardianPro" class="project-card">
-          <i class='bx bxs-folder-open'></i>
-          <div class="project-info">
-            <h2>GuardianPro</h2>
-            <p>GuardianPro is a web-based platform for clinics and healthcare professionals, offering a complete telemedicine solution. The system includes video calls, automatic AI-powered report generation, patient management, medical records, and cloud storage — all with a focus on efficient and secure healthcare.</p>
-            <button class="project-btn" data-translate="seeMore">See more</button>
-          </div>
-        </a>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 data-translate="exp2Role">Software Engineer</h3>
+                        <span class="experience-company">Sabará Children's Hospital</span>
+                    </div>
+                    <span class="experience-period" data-translate="exp2Period">Aug 2024 – Jul 2025</span>
+                </div>
+                <ul class="experience-bullets">
+                    <li data-translate="exp2b1">Developed a secure telemedicine platform supporting daily video consultations and AI-assisted medical reports.</li>
+                    <li data-translate="exp2b2">Scaled AWS infrastructure to support 3× more concurrent users while reducing infrastructure costs by 30%.</li>
+                    <li data-translate="exp2b3">Delivered 24 consecutive agile sprints with automated CI/CD and maintained 80%+ test coverage.</li>
+                    <li data-translate="exp2b4">Optimized PostgreSQL queries, significantly improving response times.</li>
+                </ul>
+            </div>
 
-        <a href="https://github.com/rflMandell/EcoAlerta" class="project-card">
-          <i class='bx bxs-folder-open'></i>
-          <div class="project-info">
-            <h2>EcoAlerta</h2>
-            <p>EcoAlerta is an automated and intelligent newsletter that sends daily, location-based reports about natural disasters (floods, earthquakes, extreme weather). Built with Django and Celery, it gathers data from public APIs (OpenWeatherMap, INMET, USGS), generates natural‑language summaries with OpenAI, and delivers personalized email alerts. Admin and task monitoring via Django Admin and Flower.</p>
-            <button class="project-btn" data-translate="seeMore">See more</button>
-          </div>
-        </a>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 data-translate="exp3Role">Software Engineer</h3>
+                        <span class="experience-company">Sociedade Espírita Rafael Lirio</span>
+                    </div>
+                    <span class="experience-period" data-translate="exp3Period">Feb 2026 – Present</span>
+                </div>
+                <ul class="experience-bullets">
+                    <li data-translate="exp3b1">Built a centralized web portal with Java and Spring Boot for information management, consolidating data previously spread across 2 separate systems.</li>
+                    <li data-translate="exp3b2">Implemented a robust role-based authentication and permissions system, integrating external APIs and ensuring sensitive data security.</li>
+                    <li data-translate="exp3b3">Modeled and optimized a relational database (PostgreSQL) and automated 8 manual internal processes, reducing operational time by 60%.</li>
+                </ul>
+            </div>
 
-      </div>
+        </div>
     </section>
 
     <section id="skills" class="section">
@@ -95,114 +122,94 @@
         </div>
         <div class="skills-container">
             <p data-translate="skillsText">
-                I turn ideas into reliable software by combining APIs, data engineering and analytics, modern UIs, and cloud-native practices with the stack below.
+                I turn ideas into reliable software by combining backend engineering, cloud infrastructure, and modern development practices with the stack below.
             </p>
-
             <div class="skills-grid">
-                <div class="skill-item">
-                    <i class='bx bxl-python'></i>
-                    <h3>Python</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
-                </div>
 
                 <div class="skill-item">
                     <i class='bx bxl-java'></i>
                     <h3>Java</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <i class='bx bxs-data'></i>
-                    <h3>SQL</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <i class='bx bxs-bar-chart-alt-2'></i>
-                    <h3>Power BI</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
                 </div>
 
                 <div class="skill-item">
-                    <i class="ri-rocket-line"></i>
-                    <h3>FastAPI</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
+                    <i class='bx bxl-spring-boot'></i>
+                    <h3>Spring Boot</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
                 </div>
 
                 <div class="skill-item">
-                    <i class='bx bxl-javascript'></i>
-                    <h3>JavaScript</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <i class='bx bxl-react'></i>
-                    <h3>React</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <i class="ri-amazon-fill"></i>
-                    <h3>AWS</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <i class="ri-database-2-line"></i>
-                    <h3>PostgreSQL</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <i class="ri-database-line"></i>
-                    <h3>MySQL</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <i class='bx bxl-vuejs'></i>
-                    <h3>Vue</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <i class='bx bxl-nodejs'></i>
-                    <h3>Node.js</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
+                    <i class='bx bxl-python'></i>
+                    <h3>Python</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
                 </div>
 
                 <div class="skill-item">
                     <i class="ri-leaf-line"></i>
                     <h3>Django</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
                 </div>
-                <!-- Fim novas skills -->
+
+                <div class="skill-item">
+                    <i class='bx bxl-nodejs'></i>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxs-data'></i>
+                    <h3>SQL</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <i class="ri-database-2-line"></i>
+                    <h3>PostgreSQL</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <i class="ri-database-line"></i>
+                    <h3>MongoDB</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-react'></i>
+                    <h3>React</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-javascript'></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <i class="ri-amazon-fill"></i>
+                    <h3>AWS</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-docker'></i>
+                    <h3>Docker</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <i class='bx bxl-git'></i>
+                    <h3>Git</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <i class="ri-rocket-line"></i>
+                    <h3>CI/CD</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -212,38 +219,26 @@
             <h1 data-translate="educationTitle">Education</h1>
         </div>
         <div class="education-list">
+
             <div class="education-item">
                 <i class="ri-award-fill"></i>
                 <div class="education-info">
-                    <h3>FIAP - Bachelor's in Software Engineering</h3>
-                    <p>August 2024 - December 2028</p>
+                    <h3 data-translate="edu1Title">FIAP – B.S. in Software Engineering</h3>
+                    <p data-translate="edu1Period">Aug 2024 – Dec 2028 (Expected)</p>
                 </div>
             </div>
-            
+
             <div class="education-item">
                 <i class="ri-award-fill"></i>
                 <div class="education-info">
-                    <h3>FIAP - Python Course</h3>
+                    <h3 data-translate="englishCert">International English Test – C1 Advanced Level</h3>
+                    <p data-translate="edu2Period">January 2025</p>
                 </div>
-            </div>
-            
-            <div class="education-item">
-                <i class="ri-award-fill"></i>
-                <div class="education-info">
-                    <h3>FIAP - Oracle Database Course</h3>
-                </div>
-            </div>
-            
-            <div class="education-item">
-                <i class="ri-award-fill"></i>
-                <div class="education-info">
-                    <h3 data-translate="englishCert">International English Test - C1 Advanced English Level</h3>
-                    <p>January 2025</p>
-                </div>
-                <a href="https://internationalenglishtest.com/verify-certificate/734926C140-734926C149-734926990B/">
+                <a href="https://internationalenglishtest.com/verify-certificate/734926C140-734926C149-734926990B/" target="_blank" rel="noopener" aria-label="Verify certificate">
                     <i class="ri-external-link-line"></i>
                 </a>
             </div>
+
         </div>
     </section>
 
@@ -258,19 +253,20 @@
             </div>
             <div class="footer-col">
                 <h4 data-translate="socialMedia">Social Media</h4>
-                <a href="arquives/CV pt-br Rafael Mandel.pdf" data-translate="resume">Resume</a>
-                <a href="https://www.linkedin.com/in/rafael-mandel-556a10310/">LinkedIn</a>
-                <a href="https://github.com/rflMandell">GitHub</a>
+                <a href="arquives/resume-rafael-mandel.pdf" data-translate="resume">Resume</a>
+                <a href="https://www.linkedin.com/in/rafael-mandel-556a10310/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/rflMandell" target="_blank" rel="noopener">GitHub</a>
                 <a href="mailto:rflmandelcr@hotmail.com">Email</a>
             </div>
         </div>
     </footer>
 
-    <button class="scroll-top">
+    <button class="scroll-top" aria-label="Scroll to top">
         <i class='bx bxs-up-arrow'></i>
     </button>
 
     <script src="scripts/language.js"></script>
     <script src="scripts/scroll.js"></script>
+    
 </body>
 </html>

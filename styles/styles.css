@@ -34,6 +34,7 @@ a {
     color: inherit;
 }
 
+/* ── Navbar ── */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -77,6 +78,7 @@ a {
     box-shadow: 0 4px 8px rgba(123, 66, 255, 0.3);
 }
 
+/* ── Header / Hero ── */
 header {
     height: 100vh;
     display: flex;
@@ -97,8 +99,9 @@ header {
 }
 
 .header-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
+    color: var(--gray);
 }
 
 .hero-social {
@@ -124,7 +127,6 @@ header {
 }
 
 .hero-social a:hover {
-    color: var(--light);
     background-color: rgba(123, 66, 255, 0.15);
     border-color: var(--primary);
     transform: translateY(-3px);
@@ -140,9 +142,10 @@ header {
 
 @keyframes float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50%       { transform: translateY(-10px); }
 }
 
+/* ── Sections ── */
 .section {
     padding: 6rem 5%;
     opacity: 0;
@@ -165,6 +168,7 @@ header {
     text-transform: uppercase;
 }
 
+/* ── About ── */
 .about-card {
     display: flex;
     gap: 3rem;
@@ -186,7 +190,7 @@ header {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 1000px;
 }
 
 .about-info h1 {
@@ -200,6 +204,7 @@ header {
     line-height: 1.8;
 }
 
+/* ── Projects ── */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
@@ -250,12 +255,14 @@ header {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .project-btn:hover {
     background-color: var(--primary-dark);
 }
 
+/* ── Skills ── */
 .skills-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -317,6 +324,74 @@ header {
     border-radius: 5px;
 }
 
+/* ── Experience ── */
+.experience-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.experience-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.experience-item:hover {
+    border-color: var(--primary);
+    box-shadow: 0 5px 15px rgba(123, 66, 255, 0.2);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.2rem;
+    gap: 1rem;
+}
+
+.experience-header h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.experience-company {
+    color: var(--primary);
+    font-size: 0.95rem;
+}
+
+.experience-period {
+    color: var(--gray);
+    font-size: 0.85rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.experience-bullets {
+    list-style: none;
+    display: grid;
+    gap: 0.6rem;
+}
+
+.experience-bullets li {
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.experience-bullets li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+/* ── Education ── */
 .education-list {
     max-width: 800px;
     margin: 0 auto;
@@ -338,9 +413,10 @@ header {
     background-color: rgba(123, 66, 255, 0.1);
 }
 
-.education-item i {
+.education-item > i {
     font-size: 2rem;
     color: var(--primary);
+    flex-shrink: 0;
 }
 
 .education-info h3 {
@@ -356,12 +432,14 @@ header {
     color: var(--primary);
     font-size: 1.2rem;
     transition: color 0.3s;
+    flex-shrink: 0;
 }
 
 .education-item a:hover {
     color: var(--light);
 }
 
+/* ── Footer ── */
 footer {
     background-color: var(--dark);
     padding: 4rem 5%;
@@ -386,14 +464,12 @@ footer {
     margin-bottom: 1rem;
 }
 
-.footer-col a {
+.footer-col a:hover {
+    color: var(--primary);
     transition: color 0.3s;
 }
 
-.footer-col a:hover {
-    color: var(--primary);
-}
-
+/* ── Scroll-to-top ── */
 .scroll-top {
     position: fixed;
     bottom: 2rem;
@@ -423,6 +499,7 @@ footer {
     transform: translateY(-5px);
 }
 
+/* ── Responsive ── */
 @media (max-width: 992px) {
     .about-card {
         flex-direction: column;
@@ -434,17 +511,21 @@ footer {
         width: 200px;
         height: 200px;
     }
+
+    .experience-header {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {
     .navbar {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
     }
 
     .header-content h1 {
-    font-size: 3rem;
+        font-size: 3rem;
     }
 
     .hero-social {
@@ -453,7 +534,7 @@ footer {
     }
 
     .footer-columns {
-    flex-direction: column;
+        flex-direction: column;
     }
 }
 
