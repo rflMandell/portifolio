@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       /* Nav */
       about: 'About me',
       experience: 'Experience',
+      projects: 'Projects',
       skills: 'My skills',
       education: 'Education',
 
@@ -34,10 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
         'Software Engineer with experience building scalable backend systems in healthcare environments using Java, Spring Boot, Python, and Django. Strong background in RESTful APIs, cloud infrastructure (AWS), microservices architecture, and CI/CD automation. Proven track record of improving system scalability, reducing infrastructure costs, and delivering high-quality software in agile environments. C1 Advanced English proficiency.',
 
       /* Projects */
-      projectsTitle: 'Projects',
-      project1Title: 'GuardianPro',
+      projectsTitle: 'Personal Projects',
+      project1Role: 'Software Engineer',
+      project1Title: 'StudyWithUs',
+      project1Period: 'Oct 2026 – Present',
       project1Desc:
-        'Web-based telemedicine platform for clinics and healthcare professionals. Features video consultations, AI-powered medical report generation, patient management, medical records, and cloud storage — all built for efficient and secure healthcare delivery.',
+        'A social platform where students can check in to classes and study sessions, earn points, and compete in a fun and healthy way within their communities.',
+      project1Btn: 'View Repository',
       project2Title: 'EcoAlerta',
       project2Desc:
         'Automated, intelligent newsletter delivering daily location-based natural disaster reports (floods, earthquakes, extreme weather). Built with Django and Celery, it pulls from public APIs (OpenWeatherMap, INMET, USGS), generates natural-language summaries with OpenAI, and delivers personalized email alerts. Monitored via Django Admin and Flower.',
@@ -80,7 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'pt-BR': {
       /* Nav */
       about: 'Sobre mim',
-      experience: 'Experiencia',
+      experience: 'Experiência',
+      projects: 'Projetos',
       skills: 'Habilidades',
       education: 'Formação',
 
@@ -97,10 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
         'Engenheiro de Software com experiência na construção de sistemas backend escaláveis em ambientes de saúde utilizando Java, Spring Boot, Python e Django. Sólido conhecimento em APIs RESTful, infraestrutura em nuvem (AWS), arquitetura de microsserviços e automação CI/CD. Histórico comprovado de melhoria na escalabilidade de sistemas, redução de custos de infraestrutura e entrega de software de alta qualidade em ambientes ágeis. Inglês C1 Avançado.',
 
       /* Projects */
-      projectsTitle: 'Projetos',
-      project1Title: 'GuardianPro',
+      projectsTitle: 'Projetos Pessoais',
+      project1Role: 'Engenheiro de Software',
+      project1Title: 'StudyWithUs',
+      project1Period: 'Out 2026 – Presente',
       project1Desc:
-        'Plataforma web de telemedicina para clínicas e profissionais de saúde. Inclui videoconsultas, geração automática de laudos com IA, gerenciamento de pacientes, prontuários e armazenamento em nuvem — tudo com foco em atendimento eficiente e seguro.',
+        'Uma plataforma social onde estudantes podem fazer check-in em aulas e sessões de estudo, acumular pontos e competir de forma divertida e saudável dentro de suas comunidades.',
+      project1Btn: 'Ver Repositório',
       project2Title: 'EcoAlerta',
       project2Desc:
         'Newsletter automatizada e inteligente com relatórios diários e personalizados sobre desastres naturais (enchentes, terremotos, eventos climáticos extremos) com base na localização do usuário. Construído com Django e Celery, coleta dados de APIs públicas (OpenWeatherMap, INMET, USGS), gera resumos em linguagem natural com OpenAI e entrega alertas por e-mail. Monitorado via Django Admin e Flower.',
